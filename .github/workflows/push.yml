@@ -11,11 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-      - uses: reviewdog/action-eslint@v1
-        with:
-          reporter: github-check
-          eslint_flags: 'webroot/src/'
+#      - uses: actions/setup-node@v3
+#      - uses: reviewdog/action-eslint@v1
+#        with:
+#          reporter: github-check
+#          eslint_flags: 'webroot/src/'
+        run: |
+          cd webroot
+          npm i
+          npm run lint
 
   prettier-for-push:
     runs-on: ubuntu-latest
