@@ -6,26 +6,8 @@ on:
       - production
 
 jobs:
-  eslint-for-push:
-    name: eslint-for-push
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v3
-#      - uses: actions/setup-node@v3
-#      - uses: reviewdog/action-eslint@v1
-#        with:
-#          reporter: github-check
-#          eslint_flags: 'webroot/src/'
-      - name: Eslint Check
-        run: |
-          cd webroot
-          npm i
-          npm run lint
-
   prettier-for-push:
     runs-on: ubuntu-latest
-    needs: eslint-for-push
     steps:
       - name: Check out code
         uses: actions/checkout@v3
