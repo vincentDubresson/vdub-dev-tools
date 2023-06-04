@@ -1,0 +1,23 @@
+.aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 2 / 3;
+  margin: 5px 10px 10px 10px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 900px) {
+  .aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 2;
+    grid-row: 1;
+    margin: 10px 5px 10px 10px;
+  }
+}

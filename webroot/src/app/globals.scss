@@ -13,13 +13,23 @@ body {
 }
 
 body {
-  color: rgb($foreground-rgb);
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb($background-end-rgb)) rgb($background-start-rgb);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 60px;
+  background-color: rgb($primary-bg-rgb);
+  color: rgb($black-rgb);
+  height: 100vh;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: 1fr;
+  }
 }
