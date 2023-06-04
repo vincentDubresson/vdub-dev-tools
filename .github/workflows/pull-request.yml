@@ -1,0 +1,13 @@
+name: test-for-pull-request
+
+on:
+  pull_request:
+
+jobs:
+  jest-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Build and test Website
+        run: docker compose -f docker-compose.ci.website.yml up --build --exit-code-from website

@@ -1,0 +1,29 @@
+{
+  "name": "tools.vdub-dev.fr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:fix": "prettier --write \"**/*.{ts,tsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentDubresson/vdub-dev-tools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincentDubresson/vdub-dev-tools/issues"
+  },
+  "homepage": "https://github.com/vincentDubresson/vdub-dev-tools#readme",
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "prettier": "^2.8.8"
+  }
+}
