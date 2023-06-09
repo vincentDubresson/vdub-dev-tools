@@ -7,7 +7,9 @@ describe('Home', () => {
   it('renders without crashing', () => {
     render(<Home />);
 
-    const textInHomeComponent = screen.getByText(/Hello/i);
+    const textInHomeComponent = screen.getByText(
+      /Choisir un outil dans la liste ci-dessous/i
+    );
 
     expect(textInHomeComponent).toBeInTheDocument();
   });
