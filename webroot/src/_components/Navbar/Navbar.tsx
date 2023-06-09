@@ -1,10 +1,15 @@
 import styles from './Navbar.module.scss';
+import logo from '../../../public/logo.svg';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
-    <aside className={styles.aside}>
-      <h1 className={styles.title}>Hello</h1>
-    </aside>
+    <nav className={styles.navbar}>
+      <div className={styles.logo_container}>
+        <Image className={styles.logo} src={logo} alt="logo" />
+      </div>
+      <div className={styles.menu}></div>
+    </nav>
   );
 };
 
