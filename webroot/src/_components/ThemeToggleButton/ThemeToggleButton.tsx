@@ -13,6 +13,7 @@ const ThemeToggleButton = ({ themeToggle }: { themeToggle: any }) => {
 
   return (
     <button
+      data-testid="theme-toggle-button"
       className={styles.button}
       onClick={() =>
         handleThemeToggleClick(theme === 'light' ? 'dark' : 'light')
