@@ -19,7 +19,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.className} ${theme}`}>
+      <body
+        suppressHydrationWarning={true}
+        className={`${inter.className} ${theme}`}
+      >
         <Navbar handleThemeToggle={handleThemeToggle} />
         {children}
       </body>
