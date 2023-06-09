@@ -1,18 +1,23 @@
 import './globals.scss';
 import styles from './page.module.scss';
+import logo from '../../public/logo.svg';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Hello</h1>
-
-      <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-      <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <header className={styles.header}>
+        <Image className={styles.logo} src={logo} alt="logo" />
+        <h1 className={styles.title}>
+          Choisir un outil dans la liste ci-dessous
+        </h1>
+      </header>
+      <section className={styles.button_container}>
+        <button className={styles.button}></button>
+        <button className={styles.button}></button>
+        <button className={styles.button}></button>
+        <button className={styles.button}></button>
+      </section>
     </main>
   );
 }
