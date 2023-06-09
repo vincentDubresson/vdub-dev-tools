@@ -42,6 +42,15 @@ body.light {
   main {
     background-color: rgb($light-secondary-bg-rgb);
     box-shadow: $light-box-shadow;
+
+    img {
+      filter: invert(0);
+    }
+
+    button {
+      background-color: rgb($light-primary-btn-rgb);
+      box-shadow: $light-box-shadow;
+    }
   }
 }
 
@@ -58,6 +67,15 @@ body.dark {
 
   main {
     background-color: rgb($dark-secondary-bg-rgb);
+
+    img {
+      filter: invert(1);
+    }
+
+    button {
+      background-color: rgb($dark-primary-btn-rgb);
+      box-shadow: $dark-box-shadow;
+    }
   }
 }
 

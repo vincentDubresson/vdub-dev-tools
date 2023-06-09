@@ -13,13 +13,15 @@ $white-rgb: 255 255 255;
 $light-primary-fs: 0 0 0;
 $light-primary-bg-rgb: 227 227 229;
 $light-secondary-bg-rgb: 255 255 255;
+$light-primary-btn-rgb: 225 225 225;
 $light-box-shadow: 0 2px 4px rgba(rgb($black-rgb), 0.2);
 
 // Dark mode variables
 $dark-primary-fs: 255 255 255;
 $dark-primary-bg-rgb: 40 40 40;
 $dark-secondary-bg-rgb: 25 25 25;
-$dark-box-shadow: 0 2px 4px rgba(rgb($white-rgb), 0.4);
+$dark-primary-btn-rgb: 33 33 33;
+$dark-box-shadow: 0 2px 4px rgba(rgb($light-primary-bg-rgb), 0.1);
 
 $logo-font: 'La Belle Aurore', cursive;
 
