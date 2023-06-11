@@ -1,7 +1,10 @@
+'use client';
 import './globals.scss';
 import styles from './page.module.scss';
 import logo from '../../public/logo.svg';
 import Image from 'next/image';
+import ImageIcon from '@mui/icons-material/Image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -13,10 +16,43 @@ export default function Home() {
         </h1>
       </header>
       <section className={styles.button_container}>
-        <button className={styles.button}></button>
-        <button className={styles.button}></button>
-        <button className={styles.button}></button>
-        <button className={styles.button}></button>
+        <Link href="/placeholder" className={styles.link}>
+          <ImageIcon />
+          Générateur de placeholder
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
       </section>
     </main>
   );

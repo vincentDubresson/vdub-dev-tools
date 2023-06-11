@@ -47,7 +47,7 @@ body.light {
       filter: invert(0);
     }
 
-    button {
+    a {
       background-color: rgb($light-primary-btn-rgb);
       box-shadow: $light-box-shadow;
     }
@@ -72,7 +72,7 @@ body.dark {
       filter: invert(1);
     }
 
-    button {
+    a {
       background-color: rgb($dark-primary-btn-rgb);
       box-shadow: $dark-box-shadow;
     }
