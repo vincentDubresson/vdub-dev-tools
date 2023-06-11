@@ -39,11 +39,17 @@
     max-width: 1000px;
     padding-bottom: 10px;
 
-    .button {
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
       width: 300px;
       height: 100px;
       border-radius: 15px;
       border: none;
+      text-decoration: none;
+      font-weight: 500;
     }
   }
 }
