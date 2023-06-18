@@ -75,6 +75,10 @@ body.light {
       svg {
         fill: rgb($light-svg-rgb);
       }
+
+      p {
+        color: rgb($light-secondary-fs);
+      }
     }
   }
 }
@@ -116,6 +120,10 @@ body.dark {
 
       svg {
         fill: rgb($dark-svg-rgb);
+      }
+
+      p {
+        color: rgb($dark-secondary-fs);
       }
     }
   }
