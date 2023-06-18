@@ -53,6 +53,24 @@ export default function Home() {
         <Link href="/" className={styles.link}>
           En construction
         </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
+        <Link href="/" className={styles.link}>
+          En construction
+        </Link>
       </section>
     </main>
   );

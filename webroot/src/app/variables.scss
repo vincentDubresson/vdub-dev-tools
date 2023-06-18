@@ -12,15 +12,18 @@ $white-rgb: 255 255 255;
 // Light mode variables
 $light-primary-fs: 0 0 0;
 $light-primary-bg-rgb: 227 227 229;
-$light-secondary-bg-rgb: 255 255 255;
+$light-secondary-bg-rgb: 244 245 247;
 $light-primary-btn-rgb: 225 225 225;
-$light-box-shadow: 0 2px 4px rgba(rgb($black-rgb), 0.2);
+$light-svg-rgb: 98 0 238;
+$light-box-shadow: 0 0 3px rgba(rgb($black-rgb), 0.2);
+$light-top-box-shadow: 1px -3px 3px rgba(rgb($black-rgb), 0.2);
 
 // Dark mode variables
 $dark-primary-fs: 255 255 255;
-$dark-primary-bg-rgb: 40 40 40;
-$dark-secondary-bg-rgb: 25 25 25;
+$dark-primary-bg-rgb: 50 57 67;
+$dark-secondary-bg-rgb: 56 65 82;
 $dark-primary-btn-rgb: 33 33 33;
+$dark-svg-rgb: 204 212 39;
 $dark-box-shadow: 0 2px 4px rgba(rgb($light-primary-bg-rgb), 0.1);
 
 $logo-font: 'La Belle Aurore', cursive;
