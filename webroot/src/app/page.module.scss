@@ -7,11 +7,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
-  grid-column: 1;
-  grid-row: 1 / 2;
-  margin: 0px 0px 5px 0px;
   padding-top: 15px;
-  border-radius: 0 0 20px 20px;
 
   .header {
     display: flex;
@@ -31,13 +27,13 @@
   }
 
   .button_container {
-    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 35px;
     max-width: 1000px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 60px;
 
     .link {
       display: flex;
@@ -54,26 +50,12 @@
   }
 }
 
-@media screen and (max-width: 950px) and (max-height: 500px) {
+@media screen and (min-width: 760px) {
   .main {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    grid-column: 1 / 2;
-    grid-row: 1;
-    margin: 0;
-    border-radius: 0 20px 20px 0;
+    margin-top: 50px;
   }
-}
 
-@media screen and (min-width: 900px) and (min-height: 500px) {
-  .main {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    grid-column: 2 / 3;
-    grid-row: 1;
-    margin: 0;
-    border-radius: 20px 0 0 20px;
+  .button_container {
+    padding-bottom: 20px !important;
   }
 }

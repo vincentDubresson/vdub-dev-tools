@@ -13,10 +13,9 @@ body {
 }
 
 body {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 60px;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -25,15 +24,38 @@ a {
 }
 
 /**
+* MEDIA QUERIES
+*/
+
+@media screen and (min-width: 760px) {
+  body {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+
+/**
 * DARK MODE
 */
 
 body.light {
-  background-color: rgb($light-primary-bg-rgb);
+  background-color: rgb($light-secondary-bg-rgb);
   color: rgb($light-primary-fs);
   transition: background-color 0.3s ease;
 
   nav {
+    background-color: rgb($light-primary-bg-rgb);
+    box-shadow: $light-box-shadow,
+      $light-box-shadow,
+      $light-box-shadow,
+      $light-box-shadow;
+
+    svg {
+      fill: rgb($light-svg-rgb);
+    }
+
     img {
       filter: invert(0);
     }
@@ -41,25 +63,38 @@ body.light {
 
   main {
     background-color: rgb($light-secondary-bg-rgb);
-    box-shadow: $light-box-shadow;
 
     img {
       filter: invert(0);
     }
 
     a {
-      background-color: rgb($light-primary-btn-rgb);
+      background-color: rgb($light-secondary-bg-rgb);
       box-shadow: $light-box-shadow;
+
+      svg {
+        fill: rgb($light-svg-rgb);
+      }
     }
   }
 }
 
 body.dark {
-  background-color: rgb($dark-primary-bg-rgb);
+  background-color: rgb($dark-secondary-bg-rgb);
   color: rgb($dark-primary-fs);
   transition: background-color 0.3s ease;
 
   nav {
+    background-color: rgb($dark-primary-bg-rgb);
+    box-shadow: $light-box-shadow,
+      $light-box-shadow,
+      $light-box-shadow,
+      $light-box-shadow;
+
+    svg {
+      fill: rgb($dark-svg-rgb);
+    }
+
     img {
       filter: invert(1);
     }
@@ -73,8 +108,15 @@ body.dark {
     }
 
     a {
-      background-color: rgb($dark-primary-btn-rgb);
-      box-shadow: $dark-box-shadow;
+      background-color: rgb($dark-primary-bg-rgb);
+      box-shadow: $light-box-shadow,
+        $light-box-shadow,
+        $light-box-shadow,
+        $light-box-shadow;
+
+      svg {
+        fill: rgb($dark-svg-rgb);
+      }
     }
   }
 }
@@ -195,28 +237,6 @@ sub {
   vertical-align: sub;
 }
 
-/**
-* MEDIA QUERIES
-*/
-
-@media screen and (max-width: 950px) and (max-height: 500px) {
-  body {
-    display: grid;
-    grid-template-columns: 1fr 180px;
-    grid-template-rows: 1fr;
-    min-height: 100vh;
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 900px) and (min-height: 500px) {
-  body {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: 1fr;
-  }
-}
-
 // Media Queries pour tablettes
 @media (max-width: 1024px) {
   body {
@@ -253,4 +273,8 @@ sub {
   h3 {
     font-size: $large-font-size * 0.8;
   }
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
